@@ -1,0 +1,32 @@
+let string1 = "3 2/8";
+let string2 = "5 4/6";
+
+function stringzumarray(string)
+{
+    array1 = string.split(" ");
+    array2 = string.split("/");
+    arraygelöst = [Number(array1[0]) , Number(array1[1][0]) , Number(array2[1])];
+    console.log(arraygelöst);
+    return arraygelöst;
+}
+    
+function brücheaddieren(array1a, array2b)
+{
+    ganzzahl = array1[0] + array2[0];
+    gemeinsamernenner = array1[2] * array2[2];
+    gemeinsamerzähler = array1[1]*array2[2] + array2[1]*array1[2];
+    if(gemeinsamerzähler > gemeinsamernenner)
+    {
+        ganzzahldazu = gemeinsamerzähler / gemeinsamernenner;
+        ganzzahldazuganz = Math.floor(ganzzahldazu);
+        ganzzahl = ganzzahl + ganzzahldazuganz;
+        gemeinsamerzähler = gemeinsamerzähler - ganzzahldazu * gemeinsamernenner;
+        gemeinsamerbruch = `${ganzzahl} ${gemeinsamerzähler}/${gemeinsamernenner}`;
+        console.log(gemeinsamerbruch)
+        return gemeinsamerbruch;
+    }
+}
+
+ z = stringzumarray(string1);
+ y = stringzumarray(string2);
+ brücheaddieren(array1, array2);
