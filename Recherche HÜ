@@ -1,0 +1,13 @@
+constructor:
+Methode zum Erstellen und Initialisieren eines neuen Objekts.
+
+static:
+Methode oder Eigenschaft, die zur Klasse gehört, nicht zu Instanzen.
+
+this:
+Verweist auf das aktuelle Objekt der Klasse.
+
+Class: in JavaScript ist eine Vorlage (Blueprint) für Objekte. Sie definiert Eigenschaften (Properties) 
+und Methoden, die alle Objekte dieser Klasse haben.
+Instance: ist ein konkretes Objekt, das mit der Klasse erstellt wurde. 
+Jede Instanz hat ihre eigenen Werte für die Eigenschaften.
