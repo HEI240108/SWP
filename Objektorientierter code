@@ -23,15 +23,8 @@ function brücheaddieren(array1a, array2b)
         ganzzahl = ganzzahl + ganzzahldazuganz;
         gmszähler = gmszähler - ganzzahldazuganz * gmsnenner;
     }
-    for(x = gmszähler;x > 1;x--)
-    {
-        if(gmszähler % x == 0 && gmsnenner % x == 0)
-        {
-            zähler = gmszähler / x 
-            
-        }
-    }
-    for(let i = gmsnenner; i > 0; i++)
+    
+    for(let i = gmsnenner; i > 0; i--)
     {
         if(gmszähler % i == 0 && gmsnenner % i == 0)
         {
@@ -44,9 +37,6 @@ function brücheaddieren(array1a, array2b)
     console.log(gmsbruch);
     return gmsbruch;
 }
-
-
-
 
 let array1 = stringzumarray(string1);
 let array2 = stringzumarray(string2);
