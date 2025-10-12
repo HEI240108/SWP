@@ -31,6 +31,15 @@ function brücheaddieren(array1a, array2b)
             
         }
     }
+    for(let i = gmsnenner; i > 0; i++)
+    {
+        if(gmszähler % i == 0 && gmsnenner % i == 0)
+        {
+            gmszähler = gmszähler / i;
+            gmsnenner = gmsnenner / i;
+            break;
+        }
+    }
     let gmsbruch = `${ganzzahl} ${gmszähler}/${gmsnenner}`;
     console.log(gmsbruch);
     return gmsbruch;
@@ -39,8 +48,6 @@ function brücheaddieren(array1a, array2b)
 
 
 
-
 let array1 = stringzumarray(string1);
 let array2 = stringzumarray(string2);
 brücheaddieren(array1, array2);
-kürzen(gmszähler, gmsnenner);
